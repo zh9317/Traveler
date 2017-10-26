@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--航空公司和日期-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="航空公司" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10月27日"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <!--起飞降落的时间和机场-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07:20"
+                android:textSize="25sp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/start_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="遥墙机场"
+                android:layout_below="@id/start_time"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/from_to_arrow_96px"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/arrive_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:50"
+                android:textSize="25sp"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/arrive_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浦东机场"
+                android:layout_below="@id/arrive_time"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--准点率、有无餐饮、机型-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/on_time_performance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="准点率100%"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#aaaaaa"
+                android:layout_toRightOf="@id/on_time_performance"/>
+
+            <TextView
+                android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无餐饮"
+                android:layout_toRightOf="@id/on_time_performance"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#aaaaaa"
+                android:layout_toRightOf="@id/food"/>
+
+            <TextView
+                android:id="@+id/plane_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中机型"
+                android:layout_toRightOf="@id/food"
+                android:layout_marginLeft="5dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

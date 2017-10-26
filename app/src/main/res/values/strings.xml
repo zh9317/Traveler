@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Traveler</string>
+    <string name="homepage">主页</string>
+    <string name="route">行程</string>
+    <string name="custom_service">客服</string>
+    <string name="mine">我的</string>
+    <string name="passenger_ticket">机票</string>
+    <string name="travel_route">旅游路线</string>
+    <string name="hotel">酒店预订</string>
+    <string name="more_service">更多服务</string>
+    <string name="hot_event">热门活动</string>
+    <string name="phone_label">手机号</string>
+    <string name="hint_phone">请输入手机号</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="password_label">密\u0020 \u0020码</string>
+    <string name="login_button">登录</string>
+    <string name="register">注册</string>
+    <string name="find_password">找回密码</string>
+    <string name="register_phone">手机号注册</string>
+    <string name="single_flight">单程</string>
+    <string name="round_flight">往返</string>
+    <string name="multi_flight">多程</string>
+    <string-array name="weeks">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="cancel">取 消</string>
+    <string name="ensure">确 定</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="select_week">选择星期</string>
+</resources>
